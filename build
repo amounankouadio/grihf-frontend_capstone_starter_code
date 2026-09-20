@@ -1,23 +1,29 @@
 $ npm run build
 
 
-> stayhealthy-frontend@0.1.0 build
+> med_appt@0.0.0 build
 > vite build && rm -rf server/build && mv dist server/build
 
-vite v5.4.21 building for production...
+vite v8.3.0 building client environment for production...
 transforming...
-✓ 55 modules transformed.
+✓ 40 modules transformed.
 rendering chunks...
 computing gzip size...
-dist/index.html                   2.04 kB │ gzip:  0.79 kB
-dist/assets/index-CDdkt6G1.css   11.79 kB │ gzip:  2.94 kB
-dist/assets/index-CSlxaPyb.js   185.95 kB │ gzip: 59.05 kB
-✓ built in 1.03s
+dist/index.html                   2.03 kB │ gzip:  0.79 kB
+dist/assets/index-Wcmld63M.css   11.75 kB │ gzip:  2.90 kB
+dist/assets/index-B9pWH8y4.js   265.06 kB │ gzip: 82.07 kB
 
-$ cd server
-$ ls -lrt
+✓ built in 275ms
 
-total 2
--rw-r--r-- 1 Amounan Honoré 197121 689 Sep 20 07:46 index.js
--rw-r--r-- 1 Amounan Honoré 197121 361 Sep 20 07:46 package.json
-drwxr-xr-x 1 Amounan Honoré 197121   0 Sep 20 07:46 build
+$ cd server && ls -lrt
+
+total 232
+drwxr-sr-x   2 theia users   4096 Sep 20 04:14 models
+-rw-r--r--   1 theia users    689 Sep 20 04:14 index.js
+drwxr-sr-x   2 theia users   4096 Sep 20 04:14 routes
+drwxr-sr-x   3 theia users   4096 Sep 20 04:14 public
+-rw-r--r--   1 theia users    651 Sep 20 04:14 package.json
+-rw-r--r--   1 theia users 204275 Sep 20 04:15 package-lock.json
+drwxr-sr-x 153 theia users   4096 Sep 20 04:15 node_modules
+-rw-r--r--   1 theia users    784 Sep 20 04:18 db.js
+drwxr-sr-x   3 theia users   4096 Sep 20 04:29 build
