@@ -1,0 +1,169 @@
+/* One doctor entry in the results list */
+.doctor-card-container {
+    max-width: 860px;
+    margin: 0 auto 16px;
+    background-color: #fff;
+    border: 1px solid #e6eef9;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(13, 33, 63, 0.06);
+}
+
+.doctor-card-details-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 24px;
+}
+
+.doctor-card-profile-image-container {
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.doctor-profile-pic {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.doctor-card-details {
+    flex: 1;
+}
+
+.doctor-card-detail-name {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0d213f;
+    margin-bottom: 3px;
+}
+
+.doctor-card-detail-speciality {
+    font-size: 0.95rem;
+    color: #3685fb;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+.doctor-card-detail-experience,
+.doctor-card-detail-consultationfees {
+    font-size: 0.9rem;
+    color: #6c7a8c;
+}
+
+/* Book / cancel button */
+.book-appointment-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    min-width: 180px;
+    padding: 12px 20px;
+    font-family: inherit;
+    color: #fff;
+    background-color: #3685fb;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.book-appointment-btn:hover {
+    background-color: #2870d8;
+}
+
+.book-appointment-btn div:first-child {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.book-appointment-btn div:last-child {
+    font-size: 0.75rem;
+    opacity: 0.85;
+}
+
+/* Popup holding the form or the booked appointment */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(13, 33, 63, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1100;
+    padding: 20px;
+}
+
+.modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 28px 26px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.modal-content .doctor-card-profile-image-container,
+.modal-content .doctor-card-details {
+    text-align: center;
+}
+
+.modal-content .doctor-card-details {
+    margin-bottom: 18px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: #8a97a8;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Summary of a booked appointment */
+.bookedInfo {
+    padding: 16px;
+    background-color: #f2f7ff;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.bookedInfo p {
+    font-size: 0.92rem;
+    color: #0d213f;
+    margin-bottom: 6px;
+}
+
+.cancel-appointment-btn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 11px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    font-weight: 500;
+    color: #fff;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cancel-appointment-btn:hover {
+    background-color: #c82333;
+}
+
+@media (max-width: 720px) {
+    .doctor-card-details-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}

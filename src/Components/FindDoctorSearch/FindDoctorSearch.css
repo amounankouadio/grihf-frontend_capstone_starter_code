@@ -1,0 +1,136 @@
+/* Search area shown above the doctor results */
+.finddoctor {
+    padding: 30px 20px 26px;
+    background-color: #f8fbff;
+    border-bottom: 1px solid #e6eef9;
+}
+
+.finddoctor h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0d213f;
+    margin-bottom: 6px;
+}
+
+.finddoctor-subtitle {
+    font-size: 1rem;
+    color: #6c7a8c;
+    margin-bottom: 22px;
+}
+
+/* Search box plus its submit button */
+.home-search-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.doctor-search-box {
+    position: relative;
+    width: 480px;
+    text-align: left;
+}
+
+.search-doctor-input-box {
+    width: 100%;
+    height: 48px;
+    padding: 0 46px 0 16px;
+    font-size: 1rem;
+    font-family: inherit;
+    color: #0d213f;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+}
+
+.search-doctor-input-box:focus {
+    outline: none;
+    border-color: #3685fb;
+}
+
+/* Magnifier sitting inside the input */
+.findiconimg {
+    position: absolute;
+    top: 14px;
+    right: 15px;
+    pointer-events: none;
+}
+
+/* Speciality list toggled by onFocus / onBlur */
+.search-doctor-input-results {
+    position: absolute;
+    top: 52px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #e0e6ed;
+    border-radius: 6px;
+    box-shadow: 0 6px 18px rgba(13, 33, 63, 0.12);
+    max-height: 290px;
+    overflow-y: auto;
+    z-index: 20;
+}
+
+.search-doctor-result-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    font-size: 0.95rem;
+    color: #0d213f;
+    cursor: pointer;
+    border-bottom: 1px solid #f1f4f8;
+}
+
+.search-doctor-result-item:last-child {
+    border-bottom: none;
+}
+
+.search-doctor-result-item:hover {
+    background-color: #f2f7ff;
+}
+
+.result-icon {
+    display: flex;
+    flex: none;
+}
+
+.result-label {
+    flex: 1;
+}
+
+.speciality-tag {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: #8a97a8;
+}
+
+.no-result {
+    color: #8a97a8;
+    cursor: default;
+}
+
+.no-result:hover {
+    background-color: transparent;
+}
+
+/* Submit button of the search form */
+.search-btn {
+    height: 48px;
+    padding: 0 28px;
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 500;
+    color: #fff;
+    background-color: #3685fb;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #2870d8;
+}

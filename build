@@ -1,0 +1,23 @@
+$ npm run build
+
+
+> stayhealthy-frontend@0.1.0 build
+> vite build && rm -rf server/build && mv dist server/build
+
+vite v5.4.21 building for production...
+transforming...
+✓ 55 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   2.04 kB │ gzip:  0.79 kB
+dist/assets/index-CDdkt6G1.css   11.79 kB │ gzip:  2.94 kB
+dist/assets/index-CSlxaPyb.js   185.95 kB │ gzip: 59.05 kB
+✓ built in 1.03s
+
+$ cd server
+$ ls -lrt
+
+total 2
+-rw-r--r-- 1 Amounan Honoré 197121 689 Sep 20 07:46 index.js
+-rw-r--r-- 1 Amounan Honoré 197121 361 Sep 20 07:46 package.json
+drwxr-xr-x 1 Amounan Honoré 197121   0 Sep 20 07:46 build

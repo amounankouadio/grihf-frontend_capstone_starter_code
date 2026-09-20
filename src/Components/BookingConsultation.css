@@ -1,0 +1,32 @@
+/* Page assembling the search bar and the doctor results */
+.booking-consultation {
+    min-height: calc(100vh - 96px);
+    background-color: #fff;
+}
+
+.search-results-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 26px 20px 50px;
+}
+
+.results-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #0d213f;
+    margin-bottom: 4px;
+}
+
+.results-subtitle {
+    font-size: 0.92rem;
+    color: #6c7a8c;
+    margin-bottom: 22px;
+}
+
+.results-hint,
+.no-results {
+    padding: 40px 0;
+    text-align: center;
+    font-size: 1rem;
+    color: #8a97a8;
+}

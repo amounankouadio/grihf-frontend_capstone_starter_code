@@ -1,0 +1,58 @@
+/* Instant Consultation search area */
+.finddoctor {
+    padding: 30px 20px;
+}
+
+.doctor-search-box {
+    position: relative;
+    width: 480px;
+}
+
+.search-doctor-input-box {
+    width: 100%;
+    height: 48px;
+    padding: 0 46px 0 16px;
+    font-size: 1rem;
+    font-family: inherit;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+}
+
+.findiconimg {
+    position: absolute;
+    top: 14px;
+    right: 15px;
+}
+
+.search-doctor-input-results {
+    position: absolute;
+    top: 52px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #e0e6ed;
+    border-radius: 6px;
+    box-shadow: 0 6px 18px rgba(13, 33, 63, 0.12);
+    z-index: 20;
+    text-align: left;
+}
+
+.search-doctor-result-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    cursor: pointer;
+    border-bottom: 1px solid #f1f4f8;
+}
+
+.search-doctor-result-item:hover {
+    background-color: #f2f7ff;
+}
+
+.speciality-tag {
+    margin-left: auto;
+    font-size: 0.68rem;
+    font-weight: 600;
+    color: #8a97a8;
+}

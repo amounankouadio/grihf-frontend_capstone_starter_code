@@ -1,0 +1,105 @@
+/* Layout holding the list of patient reports */
+.reports-layout {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px 60px;
+}
+
+.reports-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0d213f;
+    margin-bottom: 24px;
+}
+
+/* Table listing one report per row */
+.reports-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(13, 33, 63, 0.08);
+}
+
+.reports-table thead th {
+    padding: 16px 18px;
+    text-align: left;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #0d213f;
+    background-color: #f1f4f8;
+}
+
+.reports-table tbody td {
+    padding: 18px;
+    font-size: 0.95rem;
+    color: #3c4043;
+    border-bottom: 1px solid #eef2f7;
+    vertical-align: middle;
+}
+
+.reports-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.reports-table tbody tr:hover {
+    background-color: #f8fbff;
+}
+
+/* View and download actions */
+.report-btn {
+    display: inline-block;
+    padding: 9px 18px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.view-btn {
+    color: #fff;
+    background-color: #2190ff;
+}
+
+.view-btn:hover {
+    background-color: #0b78e3;
+}
+
+.download-btn {
+    color: #2190ff;
+    background-color: #fff;
+    border: 1.5px solid #2190ff;
+}
+
+.download-btn:hover {
+    color: #fff;
+    background-color: #2190ff;
+}
+
+/* Shown when the patient has no report yet */
+.no-reports {
+    padding: 50px 0;
+    text-align: center;
+    font-size: 1rem;
+    color: #8a97a8;
+}
+
+@media (max-width: 720px) {
+    .reports-table thead {
+        display: none;
+    }
+
+    .reports-table tbody td {
+        display: block;
+        border-bottom: none;
+    }
+
+    .reports-table tbody tr {
+        display: block;
+        margin-bottom: 14px;
+        border: 1px solid #eef2f7;
+        border-radius: 8px;
+    }
+}

@@ -1,0 +1,25 @@
+/* Global reset and base typography for the StayHealthy application */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background-color: #fff;
+  color: #0d213f;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* The navigation bar is fixed and 96px tall: reserve that space so page
+   content never renders underneath it. Padding is used rather than margin
+   because a top margin here collapses with the child container. */
+.App {
+  padding-top: 96px;
+}
