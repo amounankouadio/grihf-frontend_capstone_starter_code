@@ -84,6 +84,9 @@ const Navbar = () => {
         <li className="link">
           <Link to="/booking-consultation">Appointments</Link>
         </li>
+        <li className="link">
+          <Link to="/reviews">Reviews</Link>
+        </li>
 
         {isLoggedIn ? (
           // Authenticated: greet the user and offer a Logout button

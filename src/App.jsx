@@ -12,6 +12,7 @@ import Login from './Components/Login/Login';
 import BookingConsultation from './Components/BookingConsultation';
 import ProfileCard from './Components/ProfileCard/ProfileCard';
 import ReportsLayout from './Components/ReportsLayout/ReportsLayout';
+import GiveReviews from './Components/ReviewForm/GiveReviews';
 
 // Function component for the main App
 function App() {
@@ -33,6 +34,7 @@ function App() {
           <Route path="/booking-consultation" element={<BookingConsultation/>}/>
           <Route path="/profile" element={<ProfileCard/>}/>
           <Route path="/reports" element={<ReportsLayout/>}/>
+          <Route path="/reviews" element={<GiveReviews/>}/>
         </Routes>
       </BrowserRouter>
     </div>
